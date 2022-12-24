@@ -53,7 +53,7 @@ extern "C" {
 void Error_Handler(void);
 int sum(int);
 int asm_sum(int);
-
+void asm_delay(int);
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */

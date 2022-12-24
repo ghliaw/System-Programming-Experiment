@@ -90,8 +90,9 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	n = 100;
+	n = 50;
 	x = asm_sum(n);
+	//x = n * 4;
   while (1)
   {
     /* USER CODE END WHILE */
@@ -99,8 +100,10 @@ int main(void)
     /* USER CODE BEGIN 3 */
     HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_SET);
     HAL_Delay(x);
+		//asm_delay(x);
     HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, GPIO_PIN_RESET);
-    HAL_Delay(x);		
+    HAL_Delay(x);	
+		//asm_delay(x);
   }
   /* USER CODE END 3 */
 }

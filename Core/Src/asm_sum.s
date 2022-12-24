@@ -1,15 +1,17 @@
 	AREA asm_unc, CODE, READONLY
 asm_sum	PROC
 	EXPORT asm_sum
-	MOVS	r1, #1
-	MOVS	r2, #0
-	CMP		r1, r0
+	MOV		r4, r0
+	MOVS	r5, #1
+	MOVS	r6, #0
 loop
+	CMP		r5, r4
 	BGT		exit
-	ADDS	r2, r2, r1
-	ADDS	r1, r1, #1
+	ADDS	r6, r6, r5
+	ADDS	r5, r5, #1
 	B		loop
 exit
+	MOV		r0, r6
 	BX		LR
 	ENDP
 

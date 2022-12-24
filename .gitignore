@@ -11,3 +11,5 @@ MDK-ARM/test.uvguix.ASUS
 *.map
 *.map
 *.dep
+MDK-ARM/test.uvguix.ASUS
+MDK-ARM/test/test.map
