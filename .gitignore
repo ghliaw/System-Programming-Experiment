@@ -1,3 +1,13 @@
 
 MDK-ARM/test.uvguix.ASUS
 MDK-ARM/test.uvguix.ASUS
+*.o
+*.d
+*.ASUS
+*.axf
+*.htm
+*.hex
+*.lnp
+*.map
+*.map
+*.dep
